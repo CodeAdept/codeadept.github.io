@@ -1,5 +1,7 @@
 /* custom.css */
-
+body {
+  padding-top: 70px;
+}
 code {
     color: black;
 }
