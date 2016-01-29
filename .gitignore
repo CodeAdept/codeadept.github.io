@@ -1,0 +1,20 @@
+.DS_Store
+compiled/
+
+# Generated files under example/
+example/.frog/
+example/index*.html
+example/About.html
+example/sitemap.txt
+example/blog/
+example/subdir/
+example/feeds/
+example/tags/
+example/2*
+example/A-Non-Post-Scribble-Page*
+example/img/posts/
+
+# Emacs / DrRacket backups & auto save files
+*~
+\#*\#
+.\#*
