@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+ <title type="text">Code Adept: Posts tagged 'ria'</title>
+ <link rel="self" href="http://blog.code-adept.com/feeds/ria.atom.xml" />
+ <link href="http://blog.code-adept.com/tags/ria.html" />
+ <id>urn:http-blog-code-adept-com:-tags-ria-html</id>
+ <updated>2008-01-16T05:00:00Z</updated>
+ <entry>
+  <title type="text">Continuous Integration With Flex</title>
+  <link rel="alternate" href="http://blog.code-adept.com/blog/2008/01/16/continuous-integration-with-flex/?utm_source=ria&amp;utm_medium=Atom" />
+  <id>urn:http-blog-code-adept-com:-blog-2008-01-16-continuous-integration-with-flex</id>
+  <published>2008-01-16T05:00:00Z</published>
+  <updated>2008-01-16T05:00:00Z</updated>
+  <author>
+   <name>Jeremy Anderson</name></author>
+  <content type="html">&lt;html&gt;
+&lt;p&gt;Earlier today I had posed a question to a mailing list in the .NET community asking about Continuous Integration with Flex in the .NET world. After a couple of answers from people who obviously did not understand the question, because they just told me to google CruiseControl.NET, someone with some knowledge of TDD and Agile practices stepped up and pointed out the obvious point I was trying to make. &lt;strong&gt;There currently is no real good way to automate your FlexUnit tests in such a way that a CI server like CC.NET or HudsonCI would know whether or not all of the tests for your Actionscript classes passed or failed.&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- more--&gt;
+
+&lt;p&gt;~~So I’ve decided to start a Google Code project called agile-flex, where a couple of other developers and I will attempt to build some agile tools for the Flex framework, starting with a test runner that will help enable continuous integration for Java, .NET, or even just plain old Actionscript. The runner will likely be based off an article I found from Aaron Spjut here. In a nutshell we will create a test runner in Adobe AIR that will generate XML output similar to JUnit and NUnit for the CI server to be able to interpret. This will also enable the generation of report artifacts using the JUnit Report tasks or even a custom XSLT if desired. I’ll post more details as the project continues.~~&lt;/p&gt;
+
+&lt;p&gt;UPDATE… The Flex-Mojos project now fulfills this need, so I’ve deleted the Google Code Project that we started for this.&lt;/p&gt;&lt;/html&gt;</content></entry>
+ <entry>
+  <title type="text">Groovy, Grails, and RIAs...Oh My!</title>
+  <link rel="alternate" href="http://blog.code-adept.com/blog/2008/01/14/groovy-grails-and-rias-oh-my/?utm_source=ria&amp;utm_medium=Atom" />
+  <id>urn:http-blog-code-adept-com:-blog-2008-01-14-groovy-grails-and-rias-oh-my</id>
+  <published>2008-01-14T05:01:00Z</published>
+  <updated>2008-01-14T05:01:00Z</updated>
+  <author>
+   <name>Jeremy Anderson</name></author>
+  <content type="html">&lt;html&gt;
+&lt;p&gt;This past week I was fortunate enough to attend CodeMash v2.0.0.8 in Sandusky, Ohio. This conference is unlike anything I’ve ever been to, somewhere in the neighborhood of 350 Java programmers, .NET fan-boys and Ruby zealots all under one roof, and even having a little fun together.&lt;/p&gt;
+&lt;!-- more--&gt;
+
+&lt;p&gt;I started out the day on Thursday with a helping of Groovy. Andrew Glover, one of the co-authors of &lt;em&gt;Groovy in Action&lt;/em&gt; talked about Groovy and reignited my passion for this wonderful scripting language. For those of you who haven’t looked at Groovy yet, you owe it to yourself to take a look at it. Groovy is a “Java”-like scripting language that has some similarities with other dynamic languages like Python and Ruby. Groovy is a dynamically typed language, unlike its Java counterpart, has no checked exceptions, and also has support for things such as closures. The really powerful thing about Groovy is its ability to run in the same JVM as your current Java applications, have access to all of the classes available to Java, and all of your Java applications can also access any libraries you have written in Groovy. This makes for a very easy adoption and integration into existing Java applications, or even quick prototyping that could eventually (if necessary) be replaced by Java code. Don’t be surprised if you see more and more Groovy seeping into Java applications with its low cost of adoption.&lt;/p&gt;
+
+&lt;p&gt;The other real exciting session that I attended on Thursday was the Grails presentation given by Chris Judd, who is co-authoring a book called Practical Grails Applications. I was excited to see this framework actually approaching its 1.0 version in the very near future. I had looked at it earlier last year, but it was undergoing such rapid changes to its API that the book I purchased was rendered obsolete by the time I read it. Hopefully Chris and company have a very successful title and I’ll be able to actually build a working application. Grails is rather interesting in that it is similar to Rails in the fact that it follows the “Convention over configuration” theme, but after that most similarities stop. Grails leverages the Groovy language as its main development language, and leverages popular Java frameworks such as Spring and Hibernate to much of the heavy lifting. Even though the main contributor to Grails is a staunch anti-Maven guy (http://graemerocher.blogspot.com/2006/09/vote-to-stop-maven-infesting-spring.html), I’m still pretty excited about this framework and can’t wait to see it grow and prosper in the next year.&lt;/p&gt;
+
+&lt;p&gt;Friday I got to hear James Ward, a Flex evangelist from Adobe, give a presentation on migrating Web 1.0 applications to RIAs. As some of you may know BJ Allmon and I are writing a book on Flex and how to do Agile programming using Flex. This presentation was especially helpful in the fact that James pretty much validated the whole book for us in this one presentation. His set of steps for refactoring Web 1.0 applications to Flex practically mirrored our table of contents that I had written just a couple of weeks before attending this conference.&lt;/p&gt;
+
+&lt;p&gt;I had a wonderful time at this conference. I finally got to meet Bruce, who was the one who recruited me to Pillar, and BJ who will be helping me write possibly the best Flex book ever. I also got to meet some other very bright people out there in the technology world and pick their brains about some of the bleeding edge topics that interest me. I really hope that Pillar keeps sponsoring this conference and sends more and more of us each year to experience this.&lt;/p&gt;&lt;/html&gt;</content></entry></feed>

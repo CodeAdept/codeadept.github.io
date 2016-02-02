@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Grails Goodness</title>
+    <meta name="description" content="I’m a huge fan of Grails, and after hearing a couple of talks on it at CodeMash last week I decided to check in on it’s progress. I had first caught wind of Grails last winter when I purchased the book The Definitive Guide to Grails. I had been attempting...">
+    <meta name="author"      content="Jeremy Anderson">
+    <meta name="keywords"    content="grails, groovy, java">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <link rel="icon"      href="/favicon.ico">
+    <link rel="canonical" href="http://blog.code-adept.com/blog/2008/01/21/grails-goodness/">
+    <link rel="next" href="/blog/2008/01/17/thanks-zed-long-live-grails/">
+    <link rel="prev" href="/blog/2008/01/25/unit-testing-jsp-custom-tags/">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="/css/scribble.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <!-- Feeds -->
+    <link rel="alternate" type="application/atom+xml"
+          href="/feeds/all.atom.xml" title="Atom Feed">
+    <link rel="alternate" type="application/rss+xml"
+          href="/feeds/all.rss.xml" title="RSS Feed">
+    <!-- JS -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-xxxxx', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <!-- A standard Twitter Bootstrap nav bar -->
+    <header class="navbar navbar-default navbar-inverse navbar-fixed-top"
+            role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target=".our-nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/index.html" class="navbar-brand">Code Adept</a>
+        </div>
+        <div class="collapse navbar-collapse our-nav-collapse"
+             role="navigation">
+          <ul class="nav navbar-nav">
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Tags <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/index.html">All Posts</a></li>
+
+<li><a href="/tags/agile.html">agile</a></li>
+
+<li><a href="/tags/bar.html">bar</a></li>
+
+<li><a href="/tags/baz.html">baz</a></li>
+
+<li><a href="/tags/ci.html">ci</a></li>
+
+<li><a href="/tags/codemash.html">codemash</a></li>
+
+<li><a href="/tags/flex.html">flex</a></li>
+
+<li><a href="/tags/flexunit.html">flexunit</a></li>
+
+<li><a href="/tags/foo.html">foo</a></li>
+
+<li><a href="/tags/grails.html">grails</a></li>
+
+<li><a href="/tags/groovy.html">groovy</a></li>
+
+<li><a href="/tags/java.html">java</a></li>
+
+<li><a href="/tags/jsp.html">jsp</a></li>
+
+<li><a href="/tags/maven.html">maven</a></li>
+
+<li><a href="/tags/rails.html">rails</a></li>
+
+<li><a href="/tags/rant.html">rant</a></li>
+
+<li><a href="/tags/ria.html">ria</a></li>
+
+<li><a href="/tags/spring.html">spring</a></li>
+
+<li><a href="/tags/tag-with-spaces.html">tag with spaces</a></li>
+
+<li><a href="/tags/tdd.html">tdd</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/About.html">About</a>
+            </li> 
+            <li><a href="/feeds/all.atom.xml">Atom</a></li>
+            <li><a href="/feeds/all.rss.xml">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+
+        <!-- Main column -->
+        <div id="content" class="col-md-12">
+
+
+
+
+
+          <article>
+  <header>
+    <h1>Grails Goodness</h1>
+    <p class='date-and-tags'>
+<time datetime="2008-01-21" pubdate="true">2008-01-21</time> :: <span class="tags"><a href="/tags/grails.html">grails</a>, <a href="/tags/groovy.html">groovy</a>, <a href="/tags/java.html">java</a></span></p>
+  </header>
+
+<p>I’m a huge fan of Grails, and after hearing a couple of talks on it at CodeMash last week I decided to check in on it’s progress. I had first caught wind of Grails last winter when I purchased the book <a href="http://www.apress.com/book/view/1590597583">The Definitive Guide to Grails</a>. I had been attempting to learn Ruby on Rails, and was quite unimpressed. I’m a big fan of the whole “Convention over configuration” way of thinking, but for some reason Rails just never did it for me. Unfortunately the Grails project was undergoing so many API changes as it was working towards the 1.0 release, that it basically rendered the sample application in the book unusable. Through much digging through the documentation and the APIs I was able to struggle through most of the book and knew that this framework had great potential. So now Grails is approaching 1.0 very soon and it’s time to re-familiarize myself with this wonderful platform.</p>
+<!-- more-->
+
+<p>Earlier this week I discovered a new article on IBM’s DeveloperWorks site titled <a href="http://www.ibm.com/developerworks/java/library/j-grails01158/index.html?S_TACT=105AGX45&amp;S_CMP=LPJAVA">Mastering Grails: Build your first Grails Application</a> by Scott Davis. This article is very much a basic introduction to Grails. It takes the reader through creating the application and generating a simple domain class and controller. I love how in less than 100 lines of code, we’re able to have a complete CRUD application. If you use scaffolding, you can do it in just 15. Just a taste, definitely leaving the reader wanting more. Hopefully the next article will go in depth much more. Thankfully the code actually works as is and I didn’t have to do any digging to find out how to make it work. Until Chris Judd and company finish their Grails book Practical Grails Projects, I guess I’m stuck wading through the tutorials that may or may not work anymore depending on how long ago they were written.</p>
+  <footer>
+    <script type="text/javascript">
+      !function(d,s,id){
+          var js,fjs=d.getElementsByTagName(s)[0];
+          if(!d.getElementById(id)){
+              js=d.createElement(s);
+              js.id=id;
+              js.src="//platform.twitter.com/widgets.js";
+              fjs.parentNode.insertBefore(js,fjs);
+          }
+      }(document,"script","twitter-wjs");
+    </script>
+    <a href="https://twitter.com/share"
+       class="twitter-share-button"
+       data-url="http://blog.code-adept.com/blog/2008/01/21/grails-goodness/"
+       data-dnt="true">
+      "Tweet"</a>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    <g:plusone size="medium" href="http://blog.code-adept.com/blog/2008/01/21/grails-goodness/"></g:plusone>
+    <script type="text/javascript">
+      var disqus_shortname = 'shortname';
+      (function() {
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <div id="disqus_thread"></div>
+    <ul class="pager">
+    <li class="previous">
+      <a href="/blog/2008/01/25/unit-testing-jsp-custom-tags/">&larr; <em>Unit Testing JSP Custom Tags</em></a>
+    </li>
+    <li class="next">
+      <a href="/blog/2008/01/17/thanks-zed-long-live-grails/"><em>Thanks Zed&hellip;Long Live Grails</em> &rarr;</a>
+    </li>
+    </ul>
+  </footer>
+</article>
+        </div>
+      </div>
+      <footer>
+        <hr />
+        <div class="container">
+            <a href="https://twitter.com/racketlang"
+               class="twitter-follow-button"
+               data-show-count="false"
+               data-lang="en">
+              "Follow RacketLang"
+            </a>
+            <script type="text/javascript">
+              !function(d,s,id){
+                  var js,fjs=d.getElementsByTagName(s)[0];
+                  if(!d.getElementById(id)){
+                      js=d.createElement(s);
+                      js.id=id;
+                      js.src="//platform.twitter.com/widgets.js";
+                      fjs.parentNode.insertBefore(js,fjs);
+                  }
+              }(document,"script","twitter-wjs");
+            </script>
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/punkisdead" aria-label="Follow @punkisdead on GitHub">Follow @punkisdead</a>&nbsp;
+        </div>
+        <p>Site generated
+        by <a href="https://github.com/greghendershott/frog">Frog</a>,
+        the <strong>fr</strong>ozen bl<strong>og</strong> tool.</p>
+        <p>Using <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>.</p>
+        <p><em>Copyright &copy; 2016 Code Adept LLC</em>.</p>
+      </footer>
+    </div>
+    <!-- </body> JS -->
+    <!-- Place this tag right after the last button or just before your close body tag. -->
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

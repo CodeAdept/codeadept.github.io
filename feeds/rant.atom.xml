@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+ <title type="text">Code Adept: Posts tagged 'rant'</title>
+ <link rel="self" href="http://blog.code-adept.com/feeds/rant.atom.xml" />
+ <link href="http://blog.code-adept.com/tags/rant.html" />
+ <id>urn:http-blog-code-adept-com:-tags-rant-html</id>
+ <updated>2008-01-17T05:00:00Z</updated>
+ <entry>
+  <title type="text">Thanks Zed...Long Live Grails</title>
+  <link rel="alternate" href="http://blog.code-adept.com/blog/2008/01/17/thanks-zed-long-live-grails/?utm_source=rant&amp;utm_medium=Atom" />
+  <id>urn:http-blog-code-adept-com:-blog-2008-01-17-thanks-zed-long-live-grails</id>
+  <published>2008-01-17T05:00:00Z</published>
+  <updated>2008-01-17T05:00:00Z</updated>
+  <author>
+   <name>Jeremy Anderson</name></author>
+  <content type="html">&lt;html&gt;
+&lt;p&gt;I ran across this post on Rick Hightower’s blog the other day titled &lt;a href="http://www.jroller.com/RickHigh/entry/thanks_zed_btw_syntax_matters"&gt;Thanks Zed&lt;/a&gt;. I have to agree with Rick on many points, especially that Java should stop wasting it’s time with supporting JRuby and instead focus those efforts on Groovy and Grails. Like Rick, I had bought several Rails books and after it was all said and done, I wasn’t really that impressed. I am a huge fan of the whole “Convention Over Configuration” paradigm, but I guess I just wasn’t ready to give up on Java just yet and jump on the Rails bandwagon.&lt;/p&gt;&lt;/html&gt;</content></entry></feed>

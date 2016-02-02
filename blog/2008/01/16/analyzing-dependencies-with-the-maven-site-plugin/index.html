@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Analyzing Dependencies With The Maven Site Plugin</title>
+    <meta name="description" content="Now as most people will tell you I’m kind of a geek when it comes to Maven. It’s really a nice tool and it makes dependency management in large projects almost a no brainer…almost. The story I’m about to share is true, only the names have been changed to ...">
+    <meta name="author"      content="Jeremy Anderson">
+    <meta name="keywords"    content="java, maven">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <link rel="icon"      href="/favicon.ico">
+    <link rel="canonical" href="http://blog.code-adept.com/blog/2008/01/16/analyzing-dependencies-with-the-maven-site-plugin/">
+    <link rel="next" href="/blog/2008/01/16/continuous-integration-with-flex/">
+    <link rel="prev" href="/blog/2008/01/17/thanks-zed-long-live-grails/">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/pygments.css">
+    <link rel="stylesheet" type="text/css" href="/css/scribble.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <!-- Feeds -->
+    <link rel="alternate" type="application/atom+xml"
+          href="/feeds/all.atom.xml" title="Atom Feed">
+    <link rel="alternate" type="application/rss+xml"
+          href="/feeds/all.rss.xml" title="RSS Feed">
+    <!-- JS -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-xxxxx', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <!-- A standard Twitter Bootstrap nav bar -->
+    <header class="navbar navbar-default navbar-inverse navbar-fixed-top"
+            role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target=".our-nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/index.html" class="navbar-brand">Code Adept</a>
+        </div>
+        <div class="collapse navbar-collapse our-nav-collapse"
+             role="navigation">
+          <ul class="nav navbar-nav">
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Tags <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/index.html">All Posts</a></li>
+
+<li><a href="/tags/agile.html">agile</a></li>
+
+<li><a href="/tags/bar.html">bar</a></li>
+
+<li><a href="/tags/baz.html">baz</a></li>
+
+<li><a href="/tags/ci.html">ci</a></li>
+
+<li><a href="/tags/codemash.html">codemash</a></li>
+
+<li><a href="/tags/flex.html">flex</a></li>
+
+<li><a href="/tags/flexunit.html">flexunit</a></li>
+
+<li><a href="/tags/foo.html">foo</a></li>
+
+<li><a href="/tags/grails.html">grails</a></li>
+
+<li><a href="/tags/groovy.html">groovy</a></li>
+
+<li><a href="/tags/java.html">java</a></li>
+
+<li><a href="/tags/maven.html">maven</a></li>
+
+<li><a href="/tags/rails.html">rails</a></li>
+
+<li><a href="/tags/rant.html">rant</a></li>
+
+<li><a href="/tags/ria.html">ria</a></li>
+
+<li><a href="/tags/tag-with-spaces.html">tag with spaces</a></li>
+
+<li><a href="/tags/tdd.html">tdd</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/About.html">About</a>
+            </li> 
+            <li><a href="/feeds/all.atom.xml">Atom</a></li>
+            <li><a href="/feeds/all.rss.xml">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+
+        <!-- Main column -->
+        <div id="content" class="col-md-12">
+
+
+
+
+
+          <article>
+  <header>
+    <h1>Analyzing Dependencies With The Maven Site Plugin</h1>
+    <p class='date-and-tags'>
+<time datetime="2008-01-16" pubdate="true">2008-01-16</time> :: <span class="tags"><a href="/tags/java.html">java</a>, <a href="/tags/maven.html">maven</a></span></p>
+  </header>
+
+<p>Now as most people will tell you I’m kind of a geek when it comes to Maven. It’s really a nice tool and it makes dependency management in large projects almost a no brainer…almost. The story I’m about to share is true, only the names have been changed to protect the innocent…</p>
+<!-- more-->
+
+<p>A couple of weeks ago we were having some clashes in one of our applications due to an older version of log4j showing up on the classpath. So what could have been like finding a needle in a haystack was actually fairly simple to track down, if you only know where to look. Thankfully, some of my ranting and raving about Maven has rubbed off at this client. They took some of my suggestions as far as Maven-izing their new projects and have even seen the benefits of using the site plugin to generate project documentation. In this case, the site plugin is what ended up saving us. In the site documentation that is generated there are a couple of reports called, oddly enough, <code>Dependencies</code> and <code>Dependency Convergence</code>.</p>
+
+<h2 id="dependency-convergence">Dependency Convergence</h2>
+
+<p>The Dependency Convergence report is especially nice when dealing with large multi-module projects. At this client it is normal for each project to contain anywhere from 3 – 7 modules and maintaining a pom.xml for each one can sometimes lead to versions getting out of sync between modules. This report analyzes all of the dependency versions that appear in all of the modules for the project, and compares them to the versions of the dependencies defined for this particular module.</p>
+
+<p>At the top of the report you’ll see the summary. In this specific report you’ll see that this module has quite a few mismatched versions being defined as dependencies.</p>
+
+<div class="figure"><img src="/img/dependency-stats1.png" alt="Dependency Convergence Summary" />
+ <p class="caption">Dependency Convergence Summary</p></div>
+
+<p>The rest of the report consists of an itemized list of every dependency that is defined in the module and this is where you can see what the discrepancies are, if any.</p>
+
+<div class="figure"><img src="/img/dependency-convergence.png" alt="Dependency Convergence" />
+ <p class="caption">Dependency Convergence</p></div>
+
+<h2 id="dependencies">Dependencies</h2>
+
+<p>The Dependencies report is the one that actually saved us some serious investigation. We had just gone through and removed any explicit dependencies on log4j, since we were using commons-logging and Weblogic provides log4j for us. Somehow log4j kept showing up on the classpath, and it was an older version which had a method with a different signature than what was provided by Weblogic, so it was still causing problems. So along comes the dependency report to the rescue. The top of the report lists out what dependencies are defined and in what scope, followed by any transitive dependencies. A little further down the report is a section that actually gives a tree-view of your dependencies so you can see the hierarchy. Here is where we discovered that displaytag was the culprit.</p>
+
+<div class="figure"><img src="/img/dependency-hierarchy.png" alt="Dependency Tree" />
+ <p class="caption">Dependency Tree</p></div>
+  <footer>
+    <script type="text/javascript">
+      !function(d,s,id){
+          var js,fjs=d.getElementsByTagName(s)[0];
+          if(!d.getElementById(id)){
+              js=d.createElement(s);
+              js.id=id;
+              js.src="//platform.twitter.com/widgets.js";
+              fjs.parentNode.insertBefore(js,fjs);
+          }
+      }(document,"script","twitter-wjs");
+    </script>
+    <a href="https://twitter.com/share"
+       class="twitter-share-button"
+       data-url="http://blog.code-adept.com/blog/2008/01/16/analyzing-dependencies-with-the-maven-site-plugin/"
+       data-dnt="true">
+      "Tweet"</a>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    <g:plusone size="medium" href="http://blog.code-adept.com/blog/2008/01/16/analyzing-dependencies-with-the-maven-site-plugin/"></g:plusone>
+    <script type="text/javascript">
+      var disqus_shortname = 'shortname';
+      (function() {
+          var dsq = document.createElement('script');
+          dsq.type = 'text/javascript';
+          dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <div id="disqus_thread"></div>
+    <ul class="pager">
+    <li class="previous">
+      <a href="/blog/2008/01/17/thanks-zed-long-live-grails/">&larr; <em>Thanks Zed&hellip;Long Live Grails</em></a>
+    </li>
+    <li class="next">
+      <a href="/blog/2008/01/16/continuous-integration-with-flex/"><em>Continuous Integration With Flex</em> &rarr;</a>
+    </li>
+    </ul>
+  </footer>
+</article>
+        </div>
+      </div>
+      <footer>
+        <hr />
+        <div class="container">
+            <a href="https://twitter.com/racketlang"
+               class="twitter-follow-button"
+               data-show-count="false"
+               data-lang="en">
+              "Follow RacketLang"
+            </a>
+            <script type="text/javascript">
+              !function(d,s,id){
+                  var js,fjs=d.getElementsByTagName(s)[0];
+                  if(!d.getElementById(id)){
+                      js=d.createElement(s);
+                      js.id=id;
+                      js.src="//platform.twitter.com/widgets.js";
+                      fjs.parentNode.insertBefore(js,fjs);
+                  }
+              }(document,"script","twitter-wjs");
+            </script>
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/punkisdead" aria-label="Follow @punkisdead on GitHub">Follow @punkisdead</a>&nbsp;
+        </div>
+        <p>Site generated
+        by <a href="https://github.com/greghendershott/frog">Frog</a>,
+        the <strong>fr</strong>ozen bl<strong>og</strong> tool.</p>
+        <p>Using <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>.</p>
+        <p><em>Copyright &copy; 2016 Code Adept LLC</em>.</p>
+      </footer>
+    </div>
+    <!-- </body> JS -->
+    <!-- Place this tag right after the last button or just before your close body tag. -->
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+ <title type="text">Code Adept: Posts tagged 'flex'</title>
+ <link rel="self" href="http://blog.code-adept.com/feeds/flex.atom.xml" />
+ <link href="http://blog.code-adept.com/tags/flex.html" />
+ <id>urn:http-blog-code-adept-com:-tags-flex-html</id>
+ <updated>2008-01-16T05:00:00Z</updated>
+ <entry>
+  <title type="text">Continuous Integration With Flex</title>
+  <link rel="alternate" href="http://blog.code-adept.com/blog/2008/01/16/continuous-integration-with-flex/?utm_source=flex&amp;utm_medium=Atom" />
+  <id>urn:http-blog-code-adept-com:-blog-2008-01-16-continuous-integration-with-flex</id>
+  <published>2008-01-16T05:00:00Z</published>
+  <updated>2008-01-16T05:00:00Z</updated>
+  <author>
+   <name>Jeremy Anderson</name></author>
+  <content type="html">&lt;html&gt;
+&lt;p&gt;Earlier today I had posed a question to a mailing list in the .NET community asking about Continuous Integration with Flex in the .NET world. After a couple of answers from people who obviously did not understand the question, because they just told me to google CruiseControl.NET, someone with some knowledge of TDD and Agile practices stepped up and pointed out the obvious point I was trying to make. &lt;strong&gt;There currently is no real good way to automate your FlexUnit tests in such a way that a CI server like CC.NET or HudsonCI would know whether or not all of the tests for your Actionscript classes passed or failed.&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- more--&gt;
+
+&lt;p&gt;~~So I’ve decided to start a Google Code project called agile-flex, where a couple of other developers and I will attempt to build some agile tools for the Flex framework, starting with a test runner that will help enable continuous integration for Java, .NET, or even just plain old Actionscript. The runner will likely be based off an article I found from Aaron Spjut here. In a nutshell we will create a test runner in Adobe AIR that will generate XML output similar to JUnit and NUnit for the CI server to be able to interpret. This will also enable the generation of report artifacts using the JUnit Report tasks or even a custom XSLT if desired. I’ll post more details as the project continues.~~&lt;/p&gt;
+
+&lt;p&gt;UPDATE… The Flex-Mojos project now fulfills this need, so I’ve deleted the Google Code Project that we started for this.&lt;/p&gt;&lt;/html&gt;</content></entry></feed>

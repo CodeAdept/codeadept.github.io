@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
- <title type="text">Code Adept: Code Adept</title>
- <link rel="self" href="http://blog.code-adept.com/feeds/all.atom.xml" />
- <link href="http://blog.code-adept.com/index.html" />
- <id>urn:http-blog-code-adept-com:-index-html</id>
+ <title type="text">Code Adept: Posts tagged 'tdd'</title>
+ <link rel="self" href="http://blog.code-adept.com/feeds/tdd.atom.xml" />
+ <link href="http://blog.code-adept.com/tags/tdd.html" />
+ <id>urn:http-blog-code-adept-com:-tags-tdd-html</id>
  <updated>2008-01-25T05:00:00Z</updated>
  <entry>
   <title type="text">Unit Testing JSP Custom Tags</title>
-  <link rel="alternate" href="http://blog.code-adept.com/blog/2008/01/25/unit-testing-jsp-custom-tags/?utm_source=all&amp;utm_medium=Atom" />
+  <link rel="alternate" href="http://blog.code-adept.com/blog/2008/01/25/unit-testing-jsp-custom-tags/?utm_source=tdd&amp;utm_medium=Atom" />
   <id>urn:http-blog-code-adept-com:-blog-2008-01-25-unit-testing-jsp-custom-tags</id>
   <published>2008-01-25T05:00:00Z</published>
   <updated>2008-01-25T05:00:00Z</updated>
@@ -339,65 +339,8 @@
 
 &lt;p&gt;Congratulations, you’ve now implemented a JSP Custom Tag using “Test First”.&lt;/p&gt;&lt;/html&gt;</content></entry>
  <entry>
-  <title type="text">Grails Goodness</title>
-  <link rel="alternate" href="http://blog.code-adept.com/blog/2008/01/21/grails-goodness/?utm_source=all&amp;utm_medium=Atom" />
-  <id>urn:http-blog-code-adept-com:-blog-2008-01-21-grails-goodness</id>
-  <published>2008-01-21T05:00:00Z</published>
-  <updated>2008-01-21T05:00:00Z</updated>
-  <author>
-   <name>Jeremy Anderson</name></author>
-  <content type="html">&lt;html&gt;
-&lt;p&gt;I’m a huge fan of Grails, and after hearing a couple of talks on it at CodeMash last week I decided to check in on it’s progress. I had first caught wind of Grails last winter when I purchased the book &lt;a href="http://www.apress.com/book/view/1590597583"&gt;The Definitive Guide to Grails&lt;/a&gt;. I had been attempting to learn Ruby on Rails, and was quite unimpressed. I’m a big fan of the whole “Convention over configuration” way of thinking, but for some reason Rails just never did it for me. Unfortunately the Grails project was undergoing so many API changes as it was working towards the 1.0 release, that it basically rendered the sample application in the book unusable. Through much digging through the documentation and the APIs I was able to struggle through most of the book and knew that this framework had great potential. So now Grails is approaching 1.0 very soon and it’s time to re-familiarize myself with this wonderful platform.&lt;/p&gt;
-&lt;!-- more--&gt;
-
-&lt;p&gt;Earlier this week I discovered a new article on IBM’s DeveloperWorks site titled &lt;a href="http://www.ibm.com/developerworks/java/library/j-grails01158/index.html?S_TACT=105AGX45&amp;amp;S_CMP=LPJAVA"&gt;Mastering Grails: Build your first Grails Application&lt;/a&gt; by Scott Davis. This article is very much a basic introduction to Grails. It takes the reader through creating the application and generating a simple domain class and controller. I love how in less than 100 lines of code, we’re able to have a complete CRUD application. If you use scaffolding, you can do it in just 15. Just a taste, definitely leaving the reader wanting more. Hopefully the next article will go in depth much more. Thankfully the code actually works as is and I didn’t have to do any digging to find out how to make it work. Until Chris Judd and company finish their Grails book Practical Grails Projects, I guess I’m stuck wading through the tutorials that may or may not work anymore depending on how long ago they were written.&lt;/p&gt;&lt;/html&gt;</content></entry>
- <entry>
-  <title type="text">Thanks Zed...Long Live Grails</title>
-  <link rel="alternate" href="http://blog.code-adept.com/blog/2008/01/17/thanks-zed-long-live-grails/?utm_source=all&amp;utm_medium=Atom" />
-  <id>urn:http-blog-code-adept-com:-blog-2008-01-17-thanks-zed-long-live-grails</id>
-  <published>2008-01-17T05:00:00Z</published>
-  <updated>2008-01-17T05:00:00Z</updated>
-  <author>
-   <name>Jeremy Anderson</name></author>
-  <content type="html">&lt;html&gt;
-&lt;p&gt;I ran across this post on Rick Hightower’s blog the other day titled &lt;a href="http://www.jroller.com/RickHigh/entry/thanks_zed_btw_syntax_matters"&gt;Thanks Zed&lt;/a&gt;. I have to agree with Rick on many points, especially that Java should stop wasting it’s time with supporting JRuby and instead focus those efforts on Groovy and Grails. Like Rick, I had bought several Rails books and after it was all said and done, I wasn’t really that impressed. I am a huge fan of the whole “Convention Over Configuration” paradigm, but I guess I just wasn’t ready to give up on Java just yet and jump on the Rails bandwagon.&lt;/p&gt;&lt;/html&gt;</content></entry>
- <entry>
-  <title type="text">Analyzing Dependencies With The Maven Site Plugin</title>
-  <link rel="alternate" href="http://blog.code-adept.com/blog/2008/01/16/analyzing-dependencies-with-the-maven-site-plugin/?utm_source=all&amp;utm_medium=Atom" />
-  <id>urn:http-blog-code-adept-com:-blog-2008-01-16-analyzing-dependencies-with-the-maven-site-plugin</id>
-  <published>2008-01-16T05:00:01Z</published>
-  <updated>2008-01-16T05:00:01Z</updated>
-  <author>
-   <name>Jeremy Anderson</name></author>
-  <content type="html">&lt;html&gt;
-&lt;p&gt;Now as most people will tell you I’m kind of a geek when it comes to Maven. It’s really a nice tool and it makes dependency management in large projects almost a no brainer…almost. The story I’m about to share is true, only the names have been changed to protect the innocent…&lt;/p&gt;
-&lt;!-- more--&gt;
-
-&lt;p&gt;A couple of weeks ago we were having some clashes in one of our applications due to an older version of log4j showing up on the classpath. So what could have been like finding a needle in a haystack was actually fairly simple to track down, if you only know where to look. Thankfully, some of my ranting and raving about Maven has rubbed off at this client. They took some of my suggestions as far as Maven-izing their new projects and have even seen the benefits of using the site plugin to generate project documentation. In this case, the site plugin is what ended up saving us. In the site documentation that is generated there are a couple of reports called, oddly enough, &lt;code&gt;Dependencies&lt;/code&gt; and &lt;code&gt;Dependency Convergence&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id="dependency-convergence"&gt;Dependency Convergence&lt;/h2&gt;
-
-&lt;p&gt;The Dependency Convergence report is especially nice when dealing with large multi-module projects. At this client it is normal for each project to contain anywhere from 3 – 7 modules and maintaining a pom.xml for each one can sometimes lead to versions getting out of sync between modules. This report analyzes all of the dependency versions that appear in all of the modules for the project, and compares them to the versions of the dependencies defined for this particular module.&lt;/p&gt;
-
-&lt;p&gt;At the top of the report you’ll see the summary. In this specific report you’ll see that this module has quite a few mismatched versions being defined as dependencies.&lt;/p&gt;
-
-&lt;div class="figure"&gt;&lt;img src="/img/dependency-stats1.png" alt="Dependency Convergence Summary" /&gt;
- &lt;p class="caption"&gt;Dependency Convergence Summary&lt;/p&gt;&lt;/div&gt;
-
-&lt;p&gt;The rest of the report consists of an itemized list of every dependency that is defined in the module and this is where you can see what the discrepancies are, if any.&lt;/p&gt;
-
-&lt;div class="figure"&gt;&lt;img src="/img/dependency-convergence.png" alt="Dependency Convergence" /&gt;
- &lt;p class="caption"&gt;Dependency Convergence&lt;/p&gt;&lt;/div&gt;
-
-&lt;h2 id="dependencies"&gt;Dependencies&lt;/h2&gt;
-
-&lt;p&gt;The Dependencies report is the one that actually saved us some serious investigation. We had just gone through and removed any explicit dependencies on log4j, since we were using commons-logging and Weblogic provides log4j for us. Somehow log4j kept showing up on the classpath, and it was an older version which had a method with a different signature than what was provided by Weblogic, so it was still causing problems. So along comes the dependency report to the rescue. The top of the report lists out what dependencies are defined and in what scope, followed by any transitive dependencies. A little further down the report is a section that actually gives a tree-view of your dependencies so you can see the hierarchy. Here is where we discovered that displaytag was the culprit.&lt;/p&gt;
-
-&lt;div class="figure"&gt;&lt;img src="/img/dependency-hierarchy.png" alt="Dependency Tree" /&gt;
- &lt;p class="caption"&gt;Dependency Tree&lt;/p&gt;&lt;/div&gt;&lt;/html&gt;</content></entry>
- <entry>
   <title type="text">Continuous Integration With Flex</title>
-  <link rel="alternate" href="http://blog.code-adept.com/blog/2008/01/16/continuous-integration-with-flex/?utm_source=all&amp;utm_medium=Atom" />
+  <link rel="alternate" href="http://blog.code-adept.com/blog/2008/01/16/continuous-integration-with-flex/?utm_source=tdd&amp;utm_medium=Atom" />
   <id>urn:http-blog-code-adept-com:-blog-2008-01-16-continuous-integration-with-flex</id>
   <published>2008-01-16T05:00:00Z</published>
   <updated>2008-01-16T05:00:00Z</updated>
@@ -409,119 +352,4 @@
 
 &lt;p&gt;~~So I’ve decided to start a Google Code project called agile-flex, where a couple of other developers and I will attempt to build some agile tools for the Flex framework, starting with a test runner that will help enable continuous integration for Java, .NET, or even just plain old Actionscript. The runner will likely be based off an article I found from Aaron Spjut here. In a nutshell we will create a test runner in Adobe AIR that will generate XML output similar to JUnit and NUnit for the CI server to be able to interpret. This will also enable the generation of report artifacts using the JUnit Report tasks or even a custom XSLT if desired. I’ll post more details as the project continues.~~&lt;/p&gt;
 
-&lt;p&gt;UPDATE… The Flex-Mojos project now fulfills this need, so I’ve deleted the Google Code Project that we started for this.&lt;/p&gt;&lt;/html&gt;</content></entry>
- <entry>
-  <title type="text">Groovy, Grails, and RIAs...Oh My!</title>
-  <link rel="alternate" href="http://blog.code-adept.com/blog/2008/01/14/groovy-grails-and-rias-oh-my/?utm_source=all&amp;utm_medium=Atom" />
-  <id>urn:http-blog-code-adept-com:-blog-2008-01-14-groovy-grails-and-rias-oh-my</id>
-  <published>2008-01-14T05:01:00Z</published>
-  <updated>2008-01-14T05:01:00Z</updated>
-  <author>
-   <name>Jeremy Anderson</name></author>
-  <content type="html">&lt;html&gt;
-&lt;p&gt;This past week I was fortunate enough to attend CodeMash v2.0.0.8 in Sandusky, Ohio. This conference is unlike anything I’ve ever been to, somewhere in the neighborhood of 350 Java programmers, .NET fan-boys and Ruby zealots all under one roof, and even having a little fun together.&lt;/p&gt;
-&lt;!-- more--&gt;
-
-&lt;p&gt;I started out the day on Thursday with a helping of Groovy. Andrew Glover, one of the co-authors of &lt;em&gt;Groovy in Action&lt;/em&gt; talked about Groovy and reignited my passion for this wonderful scripting language. For those of you who haven’t looked at Groovy yet, you owe it to yourself to take a look at it. Groovy is a “Java”-like scripting language that has some similarities with other dynamic languages like Python and Ruby. Groovy is a dynamically typed language, unlike its Java counterpart, has no checked exceptions, and also has support for things such as closures. The really powerful thing about Groovy is its ability to run in the same JVM as your current Java applications, have access to all of the classes available to Java, and all of your Java applications can also access any libraries you have written in Groovy. This makes for a very easy adoption and integration into existing Java applications, or even quick prototyping that could eventually (if necessary) be replaced by Java code. Don’t be surprised if you see more and more Groovy seeping into Java applications with its low cost of adoption.&lt;/p&gt;
-
-&lt;p&gt;The other real exciting session that I attended on Thursday was the Grails presentation given by Chris Judd, who is co-authoring a book called Practical Grails Applications. I was excited to see this framework actually approaching its 1.0 version in the very near future. I had looked at it earlier last year, but it was undergoing such rapid changes to its API that the book I purchased was rendered obsolete by the time I read it. Hopefully Chris and company have a very successful title and I’ll be able to actually build a working application. Grails is rather interesting in that it is similar to Rails in the fact that it follows the “Convention over configuration” theme, but after that most similarities stop. Grails leverages the Groovy language as its main development language, and leverages popular Java frameworks such as Spring and Hibernate to much of the heavy lifting. Even though the main contributor to Grails is a staunch anti-Maven guy (http://graemerocher.blogspot.com/2006/09/vote-to-stop-maven-infesting-spring.html), I’m still pretty excited about this framework and can’t wait to see it grow and prosper in the next year.&lt;/p&gt;
-
-&lt;p&gt;Friday I got to hear James Ward, a Flex evangelist from Adobe, give a presentation on migrating Web 1.0 applications to RIAs. As some of you may know BJ Allmon and I are writing a book on Flex and how to do Agile programming using Flex. This presentation was especially helpful in the fact that James pretty much validated the whole book for us in this one presentation. His set of steps for refactoring Web 1.0 applications to Flex practically mirrored our table of contents that I had written just a couple of weeks before attending this conference.&lt;/p&gt;
-
-&lt;p&gt;I had a wonderful time at this conference. I finally got to meet Bruce, who was the one who recruited me to Pillar, and BJ who will be helping me write possibly the best Flex book ever. I also got to meet some other very bright people out there in the technology world and pick their brains about some of the bleeding edge topics that interest me. I really hope that Pillar keeps sponsoring this conference and sends more and more of us each year to experience this.&lt;/p&gt;&lt;/html&gt;</content></entry>
- <entry>
-  <title type="text">Maven Multi-Module Quickstart</title>
-  <link rel="alternate" href="http://blog.code-adept.com/blog/2008/01/14/maven-multi-module-quickstart/?utm_source=all&amp;utm_medium=Atom" />
-  <id>urn:http-blog-code-adept-com:-blog-2008-01-14-maven-multi-module-quickstart</id>
-  <published>2008-01-14T05:00:00Z</published>
-  <updated>2008-01-14T05:00:00Z</updated>
-  <author>
-   <name>Jeremy Anderson</name></author>
-  <content type="html">&lt;html&gt;
-&lt;p&gt;Recently I&amp;rsquo;ve had lots of questions about how to create multi-module projects, so when I discovered this technique, I thought I&amp;rsquo;d write this up. This technique exploits a little known feature of the &lt;code&gt;archetype:create&lt;/code&gt; plugin, and the Maven site archetype to kickstart your project. Creating a multi-module project has many benefits, one of them being the ability to build every artifact in a project with one simple &lt;code&gt;mvn compile&lt;/code&gt; command. Another benefit is that if you are using either the maven &lt;code&gt;eclipse:eclipse&lt;/code&gt; plugin or the &lt;code&gt;idea:idea&lt;/code&gt; plugin, you can enter this command at the root of the project and it will generate all of the project files for all of the contained modules.&lt;/p&gt;
-&lt;!-- more--&gt;
-
-&lt;p&gt;First generate the top level project using the &lt;code&gt;maven-archetype-site-simple&lt;/code&gt; archetype using the following command,&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;mvn archetype:create
- -DgroupId=[Java:the project's group id]
- -DartifactId=[Java:the project's artifact id]
- -DarchetypeArtifactId=maven-archetype-site-simple
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;this will generate a Maven project with the following directory structure.&lt;/p&gt;
-
-&lt;div class="figure"&gt;&lt;img src="/img/maven-archetype-site-simple.png" alt="Maven Site Simple Folder" title="folder structure" /&gt;
- &lt;p class="caption"&gt;Maven Site Simple Folder&lt;/p&gt;&lt;/div&gt;
-
-&lt;p&gt;The project that is generated is the minimum project setup to generate site documentation. The &lt;code&gt;index.apt&lt;/code&gt; file is the main index page for the site, and is written in the Almost Plain Text format, which is a wiki like format. You can also generate a more complete site project using the &lt;code&gt;maven-archetype-site&lt;/code&gt; archetype like this,&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;mvn archetype:create
- -DgroupId=[Java:the project's group id]
- -DartifactId=[Java:the project's artifact id]
- -DarchetypeArtifactId=maven-archetype-site&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This will generate the following project structure.&lt;/p&gt;
-
-&lt;div class="figure"&gt;&lt;img src="/img/maven-archetype-site.png" alt="Maven Site Folder Structure" title="site folder structure" /&gt;
- &lt;p class="caption"&gt;Maven Site Folder Structure&lt;/p&gt;&lt;/div&gt;
-
-&lt;p&gt;After you have generated the site project, edit the &lt;code&gt;pom.xml&lt;/code&gt; created from the site archetype plugin. Make sure the the packaging type is set to &lt;code&gt;pom&lt;/code&gt; like the following.&lt;/p&gt;
-
-&lt;div class="brush: xml"&gt;
- &lt;table class="sourcetable"&gt;
-  &lt;tbody&gt;
-   &lt;tr&gt;
-    &lt;td class="linenos"&gt;
-     &lt;div class="linenodiv"&gt;
-      &lt;pre&gt;1
-2
-3
-4
-5
-6
-7
-8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
-    &lt;td class="code"&gt;
-     &lt;div class="source"&gt;
-      &lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;project&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;modelversion&amp;gt;&lt;/span&gt;4.0.0&lt;span class="nt"&gt;&amp;lt;/modelversion&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;groupid&amp;gt;&lt;/span&gt;com.pillartechnology&lt;span class="nt"&gt;&amp;lt;/groupid&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;artifactid&amp;gt;&lt;/span&gt;sampleProject&lt;span class="nt"&gt;&amp;lt;/artifactid&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;version&amp;gt;&lt;/span&gt;1.0-SNAPSHOT&lt;span class="nt"&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;packaging&amp;gt;&lt;/span&gt;pom&lt;span class="nt"&gt;&amp;lt;/packaging&amp;gt;&lt;/span&gt;
-...
-&lt;span class="nt"&gt;&amp;lt;/project&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-&lt;/div&gt;
-
-&lt;p&gt;By setting the packaging type to &lt;code&gt;pom&lt;/code&gt;, any projects you generate from the root of the project directory will insert itself into the project by creating an entry into the modules section of the &lt;code&gt;pom.xml&lt;/code&gt; for the site. In the root directory of your project that you created above, type in the following command,&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;mvn archetype:create
- -DgroupId=[Java:the module's group id]
- -DartifactId=[Java:the module's artifact id]&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you now edit the &lt;code&gt;pom.xml&lt;/code&gt; for the main project, you should see an entry towards the bottom of the file like the following.&lt;/p&gt;
-
-&lt;div class="brush: xml"&gt;
- &lt;table class="sourcetable"&gt;
-  &lt;tbody&gt;
-   &lt;tr&gt;
-    &lt;td class="linenos"&gt;
-     &lt;div class="linenodiv"&gt;
-      &lt;pre&gt;1
-2
-3
-4
-5&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
-    &lt;td class="code"&gt;
-     &lt;div class="source"&gt;
-      &lt;pre&gt;...
-&lt;span class="nt"&gt;&amp;lt;modules&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;module&amp;gt;&lt;/span&gt;sampleModule&lt;span class="nt"&gt;&amp;lt;/module&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;/modules&amp;gt;&lt;/span&gt;
-...
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-&lt;/div&gt;&lt;/html&gt;</content></entry></feed>
+&lt;p&gt;UPDATE… The Flex-Mojos project now fulfills this need, so I’ve deleted the Google Code Project that we started for this.&lt;/p&gt;&lt;/html&gt;</content></entry></feed>
