@@ -61,7 +61,7 @@
 37&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
     &lt;td class="code"&gt;
      &lt;div class="source"&gt;
-      &lt;pre&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SomeCustomTagTest&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;TestCase&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SomeCustomTagTest&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;TestCase&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 
     &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="n"&gt;SomeServiceInterface&lt;/span&gt; &lt;span class="n"&gt;mockService&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
     &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="n"&gt;SomeCustomTag&lt;/span&gt; &lt;span class="n"&gt;someCustomTag&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -122,7 +122,7 @@
 10&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
     &lt;td class="code"&gt;
      &lt;div class="source"&gt;
-      &lt;pre&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SomeCustomTag&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;RequestContextAwareTag&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SomeCustomTag&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;RequestContextAwareTag&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 
     &lt;span class="kd"&gt;protected&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;doStartTagInternal&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="kd"&gt;throws&lt;/span&gt; &lt;span class="n"&gt;Exception&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 
@@ -171,7 +171,7 @@
 25&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
     &lt;td class="code"&gt;
      &lt;div class="source"&gt;
-      &lt;pre&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;testDoStartTag&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="kd"&gt;throws&lt;/span&gt; &lt;span class="n"&gt;Exception&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;testDoStartTag&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="kd"&gt;throws&lt;/span&gt; &lt;span class="n"&gt;Exception&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;param&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"Jeremy"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
     &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;expectedOutput&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"Hello, "&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;param&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 
@@ -227,7 +227,7 @@
 17&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
     &lt;td class="code"&gt;
      &lt;div class="source"&gt;
-      &lt;pre&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SomeCustomTag&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;RequestContextAwareTag&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SomeCustomTag&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;RequestContextAwareTag&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 
     &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;userName&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 
@@ -276,7 +276,7 @@
 18&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
     &lt;td class="code"&gt;
      &lt;div class="source"&gt;
-      &lt;pre&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;testDoStartTag&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="kd"&gt;throws&lt;/span&gt; &lt;span class="n"&gt;Exception&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;testDoStartTag&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="kd"&gt;throws&lt;/span&gt; &lt;span class="n"&gt;Exception&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;param&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"Jeremy"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
     &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;fullName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"Jeremy Anderson"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
     &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;expectedOutput&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"Hello, "&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;fullName&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -320,7 +320,7 @@
 12&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
     &lt;td class="code"&gt;
      &lt;div class="source"&gt;
-      &lt;pre&gt;&lt;span class="kd"&gt;protected&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;doStartTagInternal&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="kd"&gt;throws&lt;/span&gt; &lt;span class="n"&gt;Exception&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;protected&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;doStartTagInternal&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="kd"&gt;throws&lt;/span&gt; &lt;span class="n"&gt;Exception&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="c1"&gt;// Get the Spring Context from the RequestContext&lt;/span&gt;
     &lt;span class="n"&gt;WebApplicationContext&lt;/span&gt; &lt;span class="n"&gt;context&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;getRequestContext&lt;/span&gt;&lt;span class="o"&gt;().&lt;/span&gt;&lt;span class="na"&gt;getWebApplicationContext&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
 
@@ -449,7 +449,7 @@
 8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
     &lt;td class="code"&gt;
      &lt;div class="source"&gt;
-      &lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;project&amp;gt;&lt;/span&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;project&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;modelversion&amp;gt;&lt;/span&gt;4.0.0&lt;span class="nt"&gt;&amp;lt;/modelversion&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;groupid&amp;gt;&lt;/span&gt;com.pillartechnology&lt;span class="nt"&gt;&amp;lt;/groupid&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;artifactid&amp;gt;&lt;/span&gt;sampleProject&lt;span class="nt"&gt;&amp;lt;/artifactid&amp;gt;&lt;/span&gt;
@@ -482,7 +482,7 @@
 5&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
     &lt;td class="code"&gt;
      &lt;div class="source"&gt;
-      &lt;pre&gt;...
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;...
 &lt;span class="nt"&gt;&amp;lt;modules&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;module&amp;gt;&lt;/span&gt;sampleModule&lt;span class="nt"&gt;&amp;lt;/module&amp;gt;&lt;/span&gt;
 &lt;span class="nt"&gt;&amp;lt;/modules&amp;gt;&lt;/span&gt;

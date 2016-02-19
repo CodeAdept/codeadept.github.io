@@ -1,8 +1,8 @@
-http://blog.code-adept.com/blog/2008/01/25/unit-testing-jsp-custom-tags/
-http://blog.code-adept.com/blog/2008/01/16/continuous-integration-with-flex/
-http://blog.code-adept.com/blog/2008/01/14/maven-multi-module-quickstart/
 http://blog.code-adept.com/blog/2008/01/16/analyzing-dependencies-with-the-maven-site-plugin/
-http://blog.code-adept.com/blog/2008/01/14/groovy-grails-and-rias-oh-my/
 http://blog.code-adept.com/blog/2008/01/17/thanks-zed-long-live-grails/
+http://blog.code-adept.com/blog/2008/01/14/maven-multi-module-quickstart/
+http://blog.code-adept.com/blog/2008/01/14/groovy-grails-and-rias-oh-my/
+http://blog.code-adept.com/blog/2008/01/16/continuous-integration-with-flex/
 http://blog.code-adept.com/blog/2008/01/21/grails-goodness/
+http://blog.code-adept.com/blog/2008/01/25/unit-testing-jsp-custom-tags/
 http://blog.code-adept.com/About.html

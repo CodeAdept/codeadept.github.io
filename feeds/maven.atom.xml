@@ -94,7 +94,7 @@
 8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
     &lt;td class="code"&gt;
      &lt;div class="source"&gt;
-      &lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;project&amp;gt;&lt;/span&gt;
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;project&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;modelversion&amp;gt;&lt;/span&gt;4.0.0&lt;span class="nt"&gt;&amp;lt;/modelversion&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;groupid&amp;gt;&lt;/span&gt;com.pillartechnology&lt;span class="nt"&gt;&amp;lt;/groupid&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;artifactid&amp;gt;&lt;/span&gt;sampleProject&lt;span class="nt"&gt;&amp;lt;/artifactid&amp;gt;&lt;/span&gt;
@@ -127,7 +127,7 @@
 5&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;
     &lt;td class="code"&gt;
      &lt;div class="source"&gt;
-      &lt;pre&gt;...
+      &lt;pre&gt;&lt;span&gt;&lt;/span&gt;...
 &lt;span class="nt"&gt;&amp;lt;modules&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;module&amp;gt;&lt;/span&gt;sampleModule&lt;span class="nt"&gt;&amp;lt;/module&amp;gt;&lt;/span&gt;
 &lt;span class="nt"&gt;&amp;lt;/modules&amp;gt;&lt;/span&gt;

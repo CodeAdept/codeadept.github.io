@@ -164,7 +164,7 @@
 37</pre></div></td>
     <td class="code">
      <div class="source">
-      <pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SomeCustomTagTest</span> <span class="kd">extends</span> <span class="n">TestCase</span> <span class="o">{</span>
+      <pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SomeCustomTagTest</span> <span class="kd">extends</span> <span class="n">TestCase</span> <span class="o">{</span>
 
     <span class="kd">private</span> <span class="n">SomeServiceInterface</span> <span class="n">mockService</span><span class="o">;</span>
     <span class="kd">private</span> <span class="n">SomeCustomTag</span> <span class="n">someCustomTag</span><span class="o">;</span>
@@ -225,7 +225,7 @@
 10</pre></div></td>
     <td class="code">
      <div class="source">
-      <pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SomeCustomTag</span> <span class="kd">extends</span> <span class="n">RequestContextAwareTag</span> <span class="o">{</span>
+      <pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SomeCustomTag</span> <span class="kd">extends</span> <span class="n">RequestContextAwareTag</span> <span class="o">{</span>
 
     <span class="kd">protected</span> <span class="kt">int</span> <span class="nf">doStartTagInternal</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
 
@@ -274,7 +274,7 @@
 25</pre></div></td>
     <td class="code">
      <div class="source">
-      <pre><span class="kd">public</span> <span class="kt">void</span> <span class="nf">testDoStartTag</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span><span class="o">{</span>
+      <pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">testDoStartTag</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span><span class="o">{</span>
     <span class="n">String</span> <span class="n">param</span> <span class="o">=</span> <span class="s">"Jeremy"</span><span class="o">;</span>
     <span class="n">String</span> <span class="n">expectedOutput</span> <span class="o">=</span> <span class="s">"Hello, "</span> <span class="o">+</span> <span class="n">param</span><span class="o">;</span>
 
@@ -330,7 +330,7 @@
 17</pre></div></td>
     <td class="code">
      <div class="source">
-      <pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SomeCustomTag</span> <span class="kd">extends</span> <span class="n">RequestContextAwareTag</span> <span class="o">{</span>
+      <pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SomeCustomTag</span> <span class="kd">extends</span> <span class="n">RequestContextAwareTag</span> <span class="o">{</span>
 
     <span class="kd">private</span> <span class="n">String</span> <span class="n">userName</span><span class="o">;</span>
 
@@ -379,7 +379,7 @@
 18</pre></div></td>
     <td class="code">
      <div class="source">
-      <pre><span class="kd">public</span> <span class="kt">void</span> <span class="nf">testDoStartTag</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span><span class="o">{</span>
+      <pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">testDoStartTag</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span><span class="o">{</span>
     <span class="n">String</span> <span class="n">param</span> <span class="o">=</span> <span class="s">"Jeremy"</span><span class="o">;</span>
     <span class="n">String</span> <span class="n">fullName</span> <span class="o">=</span> <span class="s">"Jeremy Anderson"</span><span class="o">;</span>
     <span class="n">String</span> <span class="n">expectedOutput</span> <span class="o">=</span> <span class="s">"Hello, "</span> <span class="o">+</span> <span class="n">fullName</span><span class="o">;</span>
@@ -423,7 +423,7 @@
 12</pre></div></td>
     <td class="code">
      <div class="source">
-      <pre><span class="kd">protected</span> <span class="kt">int</span> <span class="nf">doStartTagInternal</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+      <pre><span></span><span class="kd">protected</span> <span class="kt">int</span> <span class="nf">doStartTagInternal</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
     <span class="c1">// Get the Spring Context from the RequestContext</span>
     <span class="n">WebApplicationContext</span> <span class="n">context</span> <span class="o">=</span> <span class="n">getRequestContext</span><span class="o">().</span><span class="na">getWebApplicationContext</span><span class="o">();</span>
 
